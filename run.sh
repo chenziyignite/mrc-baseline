@@ -1,0 +1,2 @@
+#! /bin/bash
+python ./run_alibaba.py --model_type bert --model_name_or_path ./pretrained --output_dir ./output/ --cache_dir ./pretrained --data_dir ./data --train_file nvzhuang_train.json --predict_file nvzhuang_dev.json --max_seq_length 264 --max_query_length 64 --max_answer_length 200 --do_train --do_eval --evaluate_during_training --per_gpu_train_batch_size 8 --learning_rate 2e-5 --num_train_epochs 3 --overwrite_output_dir
